@@ -1,0 +1,39 @@
+ <style>
+  
+.bg {
+
+  background-color:	#DEB887;
+
+}
+ h1 {
+  font-size: 45px;
+  font-weight: bold;
+  text-align:center;
+  color: #8A2BE2;
+  opacity: .6;
+}
+p{
+  font-size: 45px;
+  color: Blue;
+}
+section > h2 {
+  font-size: 30px;
+  color: blue;
+  
+ }
+a:link , a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #8FBC8F;
+	background-color: #2F4F4F;
+	display:block;
+	}      
+a:hover , a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	cursor: pointer;
+	   }
+.body {
+	background: #fff url(http://icloudpicture.com/wp-content/uploads/2015/08/White-Nice-Car-Wallpaper-HD.jpg) no-repeat bottom right;
+	   }
+</style>
