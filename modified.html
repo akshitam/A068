@@ -1,0 +1,74 @@
+<script type="text/javascript">
+
+<!--//
+
+function getTheDay(aText)
+
+{
+
+myDays=
+
+["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+
+myDate=new Date(eval('"'+aText.value+'"'))
+
+document.form1.textDay.value=myDays[myDate.getDay()]
+
+switch(document.form1.textDay.value) {
+    case "Monday":
+        document.form1.awayDay.value= "6"
+        break;
+    case "Tuesday":
+        document.form1.awayDay.value= "5"
+        break;
+    case "Wednesday":
+        document.form1.awayDay.value= "4"
+        break;
+    case "Thursday":
+        document.form1.awayDay.value= "3"
+        break;
+    case "Friday":
+        document.form1.awayDay.value= "2"
+        break;
+    case "Saturday":
+        document.form1.awayDay.value= "1"
+        break;
+    case "Sunday":
+        document.form1.awayDay.value= "It's a Sunday"
+        break;
+
+    default:
+        return 0;
+}
+
+
+}
+
+//-->
+
+</script>
+
+<form name="form1" id="form1" method="post" action="" enctype="text/plain">
+
+<input type="text" name="textDate" id="textDate" value="11 March, 2017" size="25" maxlength="25" />
+
+<input type="button" value="Get day of week" onclick="getTheDay(this.form.textDate)" />
+
+<small>
+
+<br/> Today is
+
+</small>
+
+<br />
+
+<input type="text" name="textDay" VALUE size="25" maxlength="25" />
+
+<br />
+
+Number of days away from Sunday <br/>
+
+<input type="text" name="awayDay" VALUE size="25" maxlength="25"/>
+
+
+</form>
